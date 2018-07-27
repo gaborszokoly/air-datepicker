@@ -1178,6 +1178,7 @@
             if (code == 13) {
                 if (this.focused) {
                     if (this._getCell(this.focused).hasClass('-disabled-')) return;
+                    e.preventDefault();
                     if (this.view != this.opts.minView) {
                         this.down()
                     } else {
